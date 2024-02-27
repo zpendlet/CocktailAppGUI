@@ -1,0 +1,25 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:CocktailAppVS.Views"
+        x:Class="CocktailAppVS.Views.MainWindow"
+        Width="800"
+        Height="600">
+    <StackPanel>
+
+        <TextBlock Text="Welcome to the Cocktail recipe app!" FontSize="20" FontWeight="Bold" Margin="10" HorizontalAlignment="Center"/>
+        <TextBlock Text="Data and API provided by TheCocktailDB (https://www.thecocktaildb.com/api.php)." FontSize="15" Margin="10" HorizontalAlignment="Center"/>
+        <TextBlock Text="Use the buttons below to search for a drink by ID or fetch a random drink." FontSize="15" Margin="10" HorizontalAlignment="Center"/>
+        <!-- Result TextBlock -->
+        <TextBlock x:Name="ResultTextBlock" TextWrapping="Wrap" Margin="10"/>
+
+        <!-- Buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            
+            <Button Content="Look Up by ID" Click="LookUpByIdClick" Margin="5"/>
+            <Button Content="Fetch Random" Click="FetchRandomClick" Margin="5"/>
+            <Button Content="Exit" Click="ExitClick" Margin="5"/>
+        
+        </StackPanel>
+        <TextBlock Text="More features coming soon!" FontSize="10" Margin="10" HorizontalAlignment="Center"/>
+    </StackPanel>
+</Window>
